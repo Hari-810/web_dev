@@ -1,0 +1,83 @@
+/* 
+"pseudo-classes" are used to select and style elements based on their
+state or interaction. Pseudo-classes start with a colon (":")
+followed by the keyword representing the state or interaction. 
+*/
+
+/*order : link, visited, hover, active*/
+
+a{
+    font-size: 35px;
+}
+
+
+
+a:link {
+    color: red;
+}
+/* 
+a:link: This pseudo-class targets unvisited links (anchor tags) in HTML. It allows you to style links that have not been visited by users yet.
+ */
+
+
+a:visited{
+    color: green;
+}
+/* 
+a:visited: This pseudo-class targets links that have been visited by the user. It allows you to style links differently after they have been clicked and visited.
+*/
+
+a:hover {
+    color: chartreuse;
+}
+/* 
+a:hover: This pseudo-class targets links when the user hovers the cursor over them. It is used to apply specific styles to links when they are being hovered over.
+*/
+
+a:active{
+    color: darkmagenta;
+}
+/* 
+a:active: This pseudo-class targets links when they are in an active state, typically when the user clicks on them but hasn't released the mouse button yet. The styles applied during the "active" state are often used to give visual feedback that the link is being clicked.
+
+ */
+
+
+/* a:link, a:visited {
+    background-color: hotpink;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: red;
+}
+a:active{
+    background-color: forestgreen;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+div{
+    height: 80px;
+    background-color: aquamarine;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+main{
+
+    display: grid;
+    /* inline-grid; */
+
+    grid-template-columns: 100px 200px 250px  ;    
+    /* 10% 20% 30% */
+
+    grid-template-rows: 20px 50px ;
+
+    grid-row-gap: 100px;
+
+    grid-column-gap: 50px;
+
+    justify-content: space-around;  
+    /* center, space-evenly , space-between  */
+
+ 
+}
+

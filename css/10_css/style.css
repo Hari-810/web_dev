@@ -1,0 +1,65 @@
+/*  float property is used to position an element along the left or right side of its containing element, allowing other content to flow around it. */
+/* similar to inline-block but its have positions like left right */
+ul{
+    list-style-type: none;
+    height: 35px;
+    background-color: cadetblue;
+}
+
+li{
+    font-size: 25px;
+    float: right;  /*left */
+    margin-right: 55px;
+    padding-top: 5px;
+    
+}
+
+
+
+/* z-index is a property used to control the stacking order of elements on a web page  */
+#main{
+    border: 2px solid black;
+    height: 200px;
+    width: 450px;
+
+}
+
+#red{
+    border: 1px solid red;
+    height: 150px;
+    width: 100px;
+    background-color: red;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;  /*3 */ 
+    /* z-index is a property used to control the stacking order of elements on a web page  */
+}
+
+#blue{
+    border: 1px solid blue;
+    height: 150px;
+    width: 100px;
+    background-color: blue;
+    margin: -50px;    /* -30px */
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* transitions are a way to smoothly animate changes in CSS property values over a specified duration. */
+nav{
+    height: 200px;
+    width: 200px;
+    background-color: darkorange;
+    border: 1px solid;
+    transition-property:width,background-color,height;
+    transition-duration: 1s;
+    transition-delay: 500ms;
+}
+nav:hover{
+    width: 450px;
+    background-color: aquamarine;
+    height: ;
+}

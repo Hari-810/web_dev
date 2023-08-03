@@ -1,0 +1,52 @@
+
+/* lets look into css syntax */
+/* https://www.google.com/search?q=css+syntax&tbm=isch&ved=2ahUKEwiYj8Oz_a6AAxU10aACHRbWClMQ2-cCegQIABAA&oq=css+sy&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQigUQsQMQQzoHCAAQigUQQzoGCAAQBRAeOgYIABAIEB5QkwJY9A9goxloAXAAeACAAZEBiAGlBJIBAzIuM5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Rm_CZJjUK7Wig8UPlqyrmAU&bih=650&biw=1396&rlz=1C1CHBF_enIN1003IN1003 */
+
+
+body {
+    background-color: red;
+}
+
+h1{
+    color: aliceblue;
+}
+
+/* color selection */
+
+/* 
+Keyword Colors:
+    CSS provides a set of predefined color names that you can use directly. Examples include red, blue, green, yellow, black, white, and more.
+    These names represent specific colors and are easy to remember but might not offer as many color choices as other methods.
+    EX: background-color: yellow;
+
+Hexadecimal Colors:
+    Hexadecimal colors are represented by six-character codes preceded by a hash (#). Each pair of characters represents the intensity of red, green, and blue (RGB) components in the color.
+    For example, #FF0000 represents pure red, #00FF00 is pure green, and #0000FF is pure blue.
+    Hex colors offer a wide range of color choices and are commonly used in CSS.
+    Ex: background-color: #FFA500; 
+
+RGB Colors:
+    RGB colors define the intensity of red, green, and blue components using decimal values ranging from 0 to 255 each.
+    The syntax is rgb(red, green, blue), where each value represents the intensity of the respective color channel.
+    For example, rgb(255, 0, 0) is red, rgb(0, 255, 0) is green, and rgb(0, 0, 255) is blue.
+    RGB colors are flexible and widely used due to their simple syntax.
+    Ex:  background-color: rgb(0, 0, 255);
+
+RGBA Colors:
+    RGBA colors are similar to RGB but include an additional parameter for opacity (alpha) ranging from 0.0 (fully transparent) to 1.0 (fully opaque).
+    The syntax is rgba(red, green, blue, alpha).
+    This allows you to create translucent colors, useful for creating overlays or blending with background colors.
+    Ex: background-color: rgba(255, 0, 0, 0.5); 
+
+HSL Colors:
+    HSL stands for Hue, Saturation, and Lightness. This color representation is based on the cylindrical color model, making it easier to understand and manipulate colors.
+    The syntax is hsl(hue, saturation, lightness), where hue is an angle representing the color, saturation is the intensity (0% to 100%), and lightness is the brightness (0% to 100%).
+    HSL colors offer an intuitive way to adjust colors, especially when you want to change their brightness or saturation.
+    Ex: background-color: hsl(240, 100%, 50%);
+
+HSLA Colors:
+    HSLA colors are similar to HSL but include an additional parameter for opacity (alpha) ranging from 0.0 (fully transparent) to 1.0 (fully opaque).
+    The syntax is hsla(hue, saturation, lightness, alpha).
+    Ex: background-color: hsla(0, 100%, 50%, 0.3);
+    
+When selecting colors in CSS, consider the purpose of the color scheme, accessibility for users, and the overall design aesthetic of your website or application. Using different color selection methods allows you to achieve a wide range of styles and effects in your web projects. */

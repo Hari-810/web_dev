@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boxone{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            color: white;
+            border: 5px solid black;
+            text-align: center;
+             box-sizing:border-box;
+            
+        }
+
+        #boxtwo{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            color: white;
+            border: 5px solid black;
+            text-align: center;
+            
+            box-sizing: content-box;
+            
+            padding: 20px;
+            box-sizing: border-box;  /* content-box*/ 
+            
+        }
+
+        div{
+            color: green;
+        }
+        h5{
+            color: inherit;
+        }
+        img{
+            height: 400px;
+            width: 200px;
+            border: 1px solid;
+            object-fit: contain; /* contain,cover,fill*/
+            object-position: bottom; /* bottom, left, right etc..*/
+        }
+     
+    </style>
+</head>
+<body>
+    <p id="boxone"> box one</p>
+    <p id="boxtwo">box two</p>
+    <div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam <br>
+             Nisi, ratione placeat? Debitis numquam reprehenderit, repellat, repellendus eius, quae enim possimus veritatis sapiente suscipit perspiciatis omnis magnam aliquam nulla!</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, <br>
+        officiis doloribus aspernatur sint ad porro, repellat dolores vel accusamus dicta est mollitia quod at velit fugit quae cumque. Id, dolore!</p>
+            <!-- here p tag inherit the property of div tag -->
+    </div>
+    <img src="images\bgcat.jpeg" alt="" srcset="">
+</body>
+</html>
