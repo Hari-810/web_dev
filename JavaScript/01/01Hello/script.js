@@ -2,3 +2,7 @@
 // debugging and logging purposes.
 
 console.log("Hello Guys");
+
+
+
+// note to run js file without html install node.js 

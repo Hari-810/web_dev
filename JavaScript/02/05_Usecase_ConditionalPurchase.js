@@ -8,18 +8,25 @@ var isLoggedIn = true;
 var isEmailVerified = false;
 var cardInfo = true;
 
-// if (isLoggedIn) {
-//   console.log("Logged IN Success");
-//   if (isEmailVerified) {
-//     console.log("Email is verified");
-//     if (cardInfo) {
-//       console.log("You can make a purchase");
-//     }
-//   }
-// }
 
+//  SOLUTION 1
+/*
+if (isLoggedIn) {
+  console.log("Logged IN Success");
+  if (isEmailVerified) {
+    console.log("Email is verified");
+    if (cardInfo) {
+      console.log("You can make a purchase");
+    }
+  }
+}
+*/
+
+// SOLUTION 2
+/*
 if (isLoggedIn && isEmailVerified && cardInfo) {
   console.log("Allow user to make a purchase");
 } else {
   console.log("You are NOT allowed to do that");
 }
+*/
