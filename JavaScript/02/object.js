@@ -93,3 +93,6 @@ var obj = { a: 1, b: 2, c: 3 };
 console.log(Object.keys(obj)); // output: ["a", "b", "c"]
 console.log(Object.values(obj)); // output: [1, 2, 3]
 console.log(Object.entries(obj)); // output: [["a", 1], ["b", 2], ["c", 3]]
+
+// Object methods
+// https://www.w3schools.com/js/js_object_methods.asp
