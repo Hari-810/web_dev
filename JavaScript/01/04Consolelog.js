@@ -63,3 +63,7 @@ console.timeEnd("API Request");
 Count Messages: Count the number of times a message is logged. 
 */
 console.count("Button Clicked");
+
+// Get input from the user at alert box
+var element = prompt("enter some thing");
+console.log(element )

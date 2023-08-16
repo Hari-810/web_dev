@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <select onchange="dropdown()">
+        <option disabled selected>Select</option>
+        <option>Java Script</option>
+        <option>Html</option>
+        <option>CSS</option>
+    </select>
+
+    <div>
+        <label for="userInput">Enter something:</label>
+        <input type="text" id="userInput" onchange="user_input()" />
+    </div>
+    
+    <h2 id="hover_on" onmouseover="hover_on()" onmouseleave="hover_leave()">Hover on the block</h2>
+
+   <button onclick="time()">timeout</button>
+
+   <br>
+   
+   <button onclick="startTimer()">start timer</button>
+    <h1 id="timer"></h1>
+    <button onclick="stopTimer()">stop timer</button>
+
+</body>
+</html>
