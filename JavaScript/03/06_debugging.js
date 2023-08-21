@@ -10,45 +10,14 @@
     This can help you understand what is happening in your code and identify where the bug is located.
 */
 
-// Fixing errors
+debugger;
+console.log(1);
+console.log(2);
+funZ();
 
-/*
+function funZ(){
+    console.log("function was executed");
+}
 
-*/
-
-/*
-
-*/
-
-/*
-
-*/
-
-/*
-
-*/
-
-/*
-
-*/
-
-/*
-
-*/
-
-/*
-
-*/
-
-/*
-
-*/
-
-/*
-
-*/
-
-/*
-
-*/
-
+// run the code and open the console and and go to sources to access the debugger 
+// you can able to gloabl object for every respective line  

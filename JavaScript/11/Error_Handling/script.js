@@ -69,7 +69,7 @@ function calculateRectangleArea(length, width) {
   
   try {
     const length = Number(10);
-    const width = "122e";
+    const width = "abs";
   
     const area = calculateRectangleArea(length, width);
   

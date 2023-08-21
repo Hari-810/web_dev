@@ -33,7 +33,7 @@ function show(){
 }
 
 function time(){
-    setTimeout(() => show(),2000)
+    setTimeout(() => show(),10000)
 }
 
 
