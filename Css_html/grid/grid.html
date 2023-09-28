@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        /* Define a grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* Three columns with 1:2:1 ratio */
+            grid-template-rows: auto; /* Rows will expand to fit content */
+            gap: 10px; /* Gap between grid items */
+        }
+
+        /* Style for grid items */
+        .grid-item {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        /* Example 1: Changing column size */
+        .example1 {
+            grid-column: 2 / 4; /* Start at column 2 and end at column 4 */
+        }
+
+        /* Example 2: Changing row size */
+        .example2 {
+            grid-row: 2 / 3; /* Start at row 2 and end at row 3 */
+        }
+
+        /* Example 3: Changing item placement */
+        .example3 {
+            grid-column: 1 / -1; /* Start at column 1 and end at the last column */
+            grid-row: 3; /* Place in row 3 */
+        }
+
+        /* Example 4: Spanning multiple columns and rows */
+        .example4 {
+            grid-column: 1 / span 2; /* Start at column 1 and span 2 columns */
+            grid-row: span 2; /* Span 2 rows */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item example1">Example 1</div>
+        <div class="grid-item example2">Example 2</div>
+        <div class="grid-item example3">Example 3</div>
+        <div class="grid-item example4">Example 4</div>
+        
+    </div>
+</body>
+</html>

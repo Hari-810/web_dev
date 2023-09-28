@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Properties Example</title>
+    <style>
+        /* Margin and Padding Inline Example */
+        .box1 {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-inline: 200px; /* Applies margin to both inline-start and inline-end */
+            padding-inline: 15px; /* Applies padding to both inline-start and inline-end */
+        }
+
+        /* Border Inline Example */
+        .box2 {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            border-inline-start: 2px solid red;
+            border-inline-end: 1px dashed blue;
+        }
+
+        /* Text Alignment Example */
+        .container {
+            text-align: right; /* Right-to-left text alignment */
+        }
+
+        /* Float Example */
+        .float-example {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            float: left; /* Float to the left */
+        }
+
+        .float-example-end {
+            float: right; /* Float to the right */
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* Writing Mode Example */
+        .vertical-text {
+            writing-mode: vertical-rl; /* Vertical text from right to left */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Margin and Padding</div>
+    <div class="box2">Border Inline</div>
+
+    <div class="container">
+        <p>This text is aligned to the right.</p>
+        <p>This text is aligned to the right as well.</p>
+    </div>
+
+    <div class="float-example">Float Start</div>
+    <div class="float-example-end">Float End</div>
+    <div class="clear"></div>
+
+    <div class="vertical-text">
+        <p>Vertical Text</p>
+    </div>
+</body>
+</html>
