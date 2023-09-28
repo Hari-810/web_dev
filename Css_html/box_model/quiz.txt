@@ -1,0 +1,15 @@
+Check your understanding
+
+
+
+.my-box {
+  width: 200px;
+  border: 10px solid;
+  padding: 20px;
+}
+
+
+
+a) 200px
+b) 230px
+c) 260px

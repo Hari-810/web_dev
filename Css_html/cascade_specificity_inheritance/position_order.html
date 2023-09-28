@@ -1,0 +1,36 @@
+
+<!-- 
+    Position and order of appearance #
+    
+    The order in which your CSS rules appear and how they appear is taken into consideration by the cascade while it calculates conflict resolution.
+ -->
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="UTF-8">
+      <title>CSS Order of Appearance Example</title>
+      <style>
+          /* Style 1 */
+          p {
+              color: red;
+          }
+  
+          /* Style 2 */
+          p {
+              font-size: 20px;
+          }
+  
+          /* Style 3 */
+          #special {
+              color: blue;
+          }
+      </style>
+  </head>
+  <body>
+      <p>This is a regular paragraph.</p>
+      <p id="special">This is a special paragraph.</p>
+  </body>
+  </html>
+  
+
+    

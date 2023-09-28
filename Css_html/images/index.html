@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Image Styling */
+        img {
+            /* Basic Styling */
+            width: 100%; /* Makes images responsive within their containers */
+            max-width: 500px; /* Limits the maximum width of images to 500 pixels */
+            height: auto; /* Maintains aspect ratio when resizing */
+
+            /* Borders and Margins */
+            border: 2px solid #333; /* Adds a 2-pixel solid border with a dark gray color */
+            border-radius: 10px; /* Applies a 10-pixel border radius for rounded corners */
+            margin: 10px; /* Adds 10 pixels of margin around each image */
+
+            /* Box Shadow */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle box shadow */
+
+            /* Hover Effects */
+            transition: transform 0.2s ease-in-out; /* Smoothly transitions the transform property on hover */
+        }
+
+        /* Hover Effect - Enlarge on Hover */
+        img:hover {
+            transform: scale(1.05); /* Slightly enlarges the image on hover */
+        }
+
+        /* Caption Styling */
+        figcaption {
+            text-align: center; /* Centers the caption text */
+            font-style: italic; /* Applies italic styling to the caption */
+            color: #555; /* Sets the caption text color to a dark gray */
+            margin-top: 5px; /* Adds 5 pixels of margin on top of the caption */
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="image1.jpg" alt="Image 1">
+        <figcaption>Caption for Image 1</figcaption>
+    </figure>
+
+    <figure>
+        <img src="image2.jpg" alt="Image 2" class="grayscale-effect">
+        <figcaption>Caption for Image 2</figcaption>
+    </figure>
+
+    <figure>
+        <img src="image3.jpg" alt="Image 3">
+        <figcaption>Caption for Image 3</figcaption>
+    </figure>
+</body>
+</html>

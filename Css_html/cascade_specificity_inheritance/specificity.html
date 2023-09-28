@@ -1,0 +1,81 @@
+<!-- 
+
+    Specificity 
+
+    Specificity is an algorithm which determines which CSS selector is the most specific, 
+    using a weighting or scoring system to make those calculations.
+ -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Specificity Example</title>
+    <style>
+        /* Rule 1 */   
+        /* An element (type) or pseudo-element selector gets 1 point of specificity .  */
+        h1 {
+            color: red;
+        }
+
+        /* Rule 2 */ 
+        /* A class, pseudo-class or attribute selector gets 10 points of specificity.  */
+        .important {
+            color: blue;
+        }
+
+        /* Rule 3 */
+        /* An ID selector gets 100 points of specificity  */
+        #unique {
+            color: green;
+        }
+
+        /* Rule 4 */
+        body p {
+            color: orange;
+        }
+
+        /* !important at the end of a CSS value gets a specificity score of 10,000 points. 
+        This is the highest specificity that one individual item can get. */
+        .my-class {
+            color: black !important; /* 10,000 points */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is an example</h1>
+    <p class="important">Specificity</p>
+    <p id="unique">in CSS</p>
+    <p>Done</p>
+    <p style="color: red">Thank you</p>
+    <!-- CSS applied directly to the style attribute of the HTML element, gets a specificity score of 1,000 points. */ -->
+    <p class="my-class">So much</p>
+</body>
+</html>
+
+
+<!-- 
+
+    The <h1> element will have red text (color: red) because Rule 1 has the highest specificity among the conflicting rules.
+    The <p> element with class .important will have blue text (color: blue) due to Rule 2.
+    The <p> element with id #unique will have green text (color: green) because Rule 3 has the highest specificity.
+    The second <p> element will have orange text (color: orange) because Rule 4's specificity is lower than Rule 3 but higher than Rule 2 and Rule 1.
+ -->
+
+
+ <!-- Understanding -->
+ <!-- 
+     1 point of specificity:
+        a {
+        color: red;
+            }
+
+    11 points of specificity        
+        a.my-class {
+        color: green;
+            }
+
+    21 points of specificity    
+        a.my-class.another-class {
+        color: rebeccapurple;
+        }
+  -->

@@ -1,0 +1,9 @@
+RGB Colour Mixer
+	
+	https://www.csfieldguide.org.nz/en/interactives/rgb-mixer/
+
+A comprehensive guide on color
+	https://css-tricks.com/nerds-guide-color-web/
+
+Read color hex code
+	https://youtu.be/eqZqx6lRPe0?si=oxEZ3PeP2y-CszPv
