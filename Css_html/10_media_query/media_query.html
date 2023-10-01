@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Background Color and Print Styles</title>
+    <style>
+        /* Responsive Background Color */
+        body {
+            background-color: #f0f0f0;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: #ffcccc; /* Light red background color for smaller screens */
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            body {
+                background-color: #ccffcc; /* Light green background color for larger screens */
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .navigation, footer {
+                display: none;
+            }
+
+            body {
+                font-size: 14pt;
+                background-color: white;
+                background-image: none;
+            }
+
+            @page {
+                margin: 1cm;
+                @top-center {
+                    content: "Page " counter(page) " of " counter(pages);
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <main>
+        <p>This is some content on the page.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+</body>
+</html>
