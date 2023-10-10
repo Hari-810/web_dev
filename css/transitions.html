@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transitions Examples</title>
+  <style>
+    /* Example 1: Transitioning the background-color property */
+    .transition-bg {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      transition-property: background-color;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+    }
+
+    .transition-bg:hover {
+      background-color: #e74c3c;
+    }
+
+    /* Example 2: Transitioning the width and height properties */
+    .transition-size {
+      width: 100px;
+      height: 100px;
+      background-color: #27ae60;
+      transition-property: width, height;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+    }
+
+    .transition-size:hover {
+      width: 200px;
+      height: 200px;
+    }
+
+    /* Example 3: Transitioning the transform property (scale) */
+    .transition-transform {
+      width: 100px;
+      height: 100px;
+      background-color: #f39c12;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    .transition-transform:hover {
+      transform: scale(1.5);
+    }
+
+    /* Example 4: Transitioning multiple properties with shorthand */
+    .transition-multiple {
+      width: 100px;
+      height: 100px;
+      background-color: #9b59b6;
+      transform: rotate(0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .transition-multiple:hover {
+      background-color: #34495e;
+      transform: rotate(45deg) scale(1.2);
+    }
+
+    /* Example 5: Transitioning text properties (color and font-size) */
+    .transition-text {
+      font-size: 16px;
+      color: #e67e22;
+      transition-property: color, font-size;
+      transition-duration: 0.5s;
+      transition-timing-function: ease;
+    }
+
+    .transition-text:hover {
+      font-size: 24px;
+      color: #3498db;
+    }
+  </style>
+</head>
+<body>
+  <div class="transition-bg"></div>
+  <div class="transition-size"></div>
+  <div class="transition-transform"></div>
+  <div class="transition-multiple"></div>
+  <p class="transition-text">Hover over me to see a text transition.</p>
+</body>
+</html>
