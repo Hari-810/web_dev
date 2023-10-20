@@ -123,6 +123,51 @@ function addOne(arr) {
 addOne(arr);
 console.log(arr);  // Output: [1, 2, 3, 4]
 
+/*
+
+In JavaScript, the following data types and constructs are passed by reference:
+  Objects
+  Arrays
+  funcitons
+  Objects created with custom classes
+
+In JavaScript, the following data types and constructs are passed by value:
+  Primitive Data Types:
+  Primitives like null and undefined
+
+  
+  Copies of objects, arrays, or functions
+      Using the Spread Operator (...):
+
+                function modifyArray(arr) {
+                    arr.push(4);
+                }
+
+                let myArray = [1, 2, 3];
+                modifyArray([...myArray]); // Pass a copy of the array
+                console.log(myArray); // Output will be [1, 2, 3], as the original 'myArray' remains unchanged.
+            
+      Using the slice() Method:
+
+                function modifyArray(arr) {
+                    arr.push(4);
+                }
+
+                let myArray = [1, 2, 3];
+                modifyArray(myArray.slice()); // Pass a copy of the array
+                console.log(myArray); // Output will be [1, 2, 3], as the original 'myArray' remains unchanged.
+      
+      Manually Creating a New Array     
+                function modifyArray(arr) {
+                    arr.push(4);
+                }
+
+                let myArray = [1, 2, 3];
+                let newArray = Array.from(myArray); // Create a new array
+                modifyArray(newArray); // Pass the new array
+                console.log(myArray); // Output will be [1, 2, 3], as the original 'myArray' remains unchanged.
+
+        /*
 
 // setTimeOut
 /*

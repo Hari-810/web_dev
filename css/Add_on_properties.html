@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 10px solid red;
+        }
+
+        /*     
+        several cursor values that can be used to change the appearance of the cursor when hovering over an element on a web page
+        
+            'pointer','default','text',
+                'crosshair','move','wait',
+                'help', 'not-allowed', 'e-resize',
+                'progress', 'alias', 
+                'zoom-in', 'zoom-out'*/
+        .cursor{
+            cursor: zoom-out;
+                }
+
+        /* !important keyword is used to give a style rule higher priority, making it harder to override. */
+        h1{
+            color: blue !important;
+        }
+        h1{
+            color: red;
+        }
+
+
+        /*  Box shadow*/
+
+        h3{
+            border: 2px solid;
+            box-shadow: 3px 10px green;
+            margin-right: 1000px;
+            padding: 30px;
+        }
+        /* opacity property is used to control the transparency range between 0-1*/ 
+        h4{
+            background-color: blueviolet;
+            opacity: 0.5;
+            color: black;
+            font-size: large;
+            margin-top: -50px;
+            padding: 10px;
+
+        }
+
+        .opac{
+           background-color: aqua;
+          /* padding: 50px;*/
+          height: 100px;
+        }
+
+      
+        
+        .gradient{
+            height: 100px;
+            width: 100px;
+            background-image: linear-gradient(to right, red,blue); /* radial-gradient*/
+            /*
+            'to top','to top right','to right','to bottom right','to bottom',
+            'to bottom left','to left','to top left','0deg','45deg',
+            '0.7854rad', // Equivalent to 45 degrees
+            '1.5708rad', // Equivalent to 90 degrees
+            */
+        }
+
+        .overflow{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            overflow: visible;
+            /*
+            visible
+            hidden
+            scroll
+            auto
+            overlay
+            */}
+    </style>
+
+</head>
+<body>
+    <p class="cursor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt nesciunt modi <br>
+        aliquam iste a aut, fuga obcaecati adipisci culpa deserunt laudantium assumenda optio nostrum rem voluptatibus facere sit sunt.</p>
+
+
+    <h1>important tag !important</h1>
+
+
+    <h3>box shadow</h3>
+
+    <div class="opac">
+    </div>
+    <h4>opacity content</h4>
+
+ 
+    <div class="gradient"></div>
+
+    <p class="overflow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, ipsum ut possimus consequuntur doloremque facilis labore incidunt delectus laborum. Earum atque autem iure neque vero iusto perspiciatis quae facilis ea. <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro optio itaque nisi necessitatibus perferendis deserunt aspernatur repellendus quod voluptatum cumque nobis quo beatae error quae, quia quis impedit saepe esse!</p>
+        
+</body>
+</html>

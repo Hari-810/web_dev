@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* pesudo elements */
+        h5::first-letter{
+            font-size: 25px;
+        }
+        h5::after{
+            content: "🌟"; /* You can replace this with any text, character, or image you want to display */
+            margin-right: 8px; 
+            color: #ff9900; 
+            font-size: 24px; 
+        }
+
+        h5::selection{    /* p::selection */
+            color: #cc9644
+        }
+
+        /* Display*/
+        p{
+            border: 3px solid black;
+            display: inline;  /*inline-block */
+        }
+        /* block 
+        new line
+        full width(100%)
+        able to apply height & width
+        */
+
+        i{
+            border: 3px solid black;
+            display: block;
+        }
+
+        h1{
+            border: 3px solid black;
+            border-color: blue;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+        }
+
+        /* inline
+        not start with new line
+        no full width
+        can't apply height & width
+        */
+        
+
+        /* inline-block
+        not start new line
+        dosen't take full width & height
+        height & width 
+        */ 
+    </style>
+</head>
+<body>
+    
+    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum sint error eius eaque harum ut dolore dicta libero molestias, odit aliquid atque. Minima et ad voluptatem vel corrupti dolor.</h5>
+    <h5>afa</h5>
+    <p>Hello</p>
+
+    <i>Hello</i>
+    <h1>HI</h1>
+    <h1>There</h1>
+</body>
+</html>

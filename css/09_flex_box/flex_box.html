@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        div {
+            height: 120px;
+            width: 120px;
+            background-color: darkviolet;
+            border: 3px solid;
+            margin: 3px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 25px;
+            display: flex; /* Use flexbox for vertical alignment */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        
+        
+        main {
+            margin: 100px;
+            width: 500px;
+            border: 5px solid;
+            display: flex; /* Establishes a flex container */
+            
+            /* Flex direction & wrap */
+            flex-direction: row; /* Items are laid out in a row (horizontally) */
+                /*Other possible values for flex-direction - column, row-reverse, column-reverse 
+                flex-direction: row; - Items are laid out in a row from left to right along the main axis (the default value).
+                flex-direction: column; - Items are laid out in a column from top to bottom along the main axis
+                flex-direction: row-reverse; - Items are laid out in a row from right to left along the main axis.
+                flex-direction: column-reverse; - Items are laid out in a column from bottom to top along the main axis.
+                */
+               
+            flex-wrap: wrap; /* Items can wrap to the next line if needed */
+                /*Other possible values for flex-wrap - nowrap, wrap-reverse
+                flex-wrap: nowrap; - Items are displayed in a single line, and they do not wrap to the next line (the default behavior).
+                flex-wrap: wrap-reverse; - Items wrap to the next line, but the wrapping occurs in reverse order (from the bottom to the top for rows, or from the right to the left for columns).
+                */
+
+            /* Justify & align */
+            justify-content: space-evenly; /* Items are spaced evenly along the main axis */
+                /* Other possible values for justify-content: flex-end, flex-start, space-between, space-evenly ,space-between
+                flex-end: - Items are packed at the end of the main axis.
+                flex-start: - Items are packed at the start of the main axis.
+                space-between: - Items are evenly spaced along the main axis, with space between them and none at the ends.
+                space-evenly: - Items are evenly spaced along the main axis with equal space around them.
+                */
+                
+            height: 500px;
+            align-items: center; /* Items are centered vertically */
+                /* Other possible values for align-items: flex-start, flex-end, baseline, stretch 
+                flex-start: - Items are aligned to the start of the cross axis.
+                flex-end: - Items are aligned to the end of the cross axis.
+                baseline: - Items are aligned so that their baselines align.
+                stretch: - Items are stretched to fill the container along the cross-axis.
+                */
+             }
+            /* Flex item order */
+            /* You can use the "order" property to change the order of individual items */
+
+            /* Change the order of specific items */
+            #itemC {
+                order: 1; /* Item C will be displayed first */
+            }
+
+            #itemE {
+                order: -1; /* Item E will be displayed before Item A */
+            }
+
+            /* Apply align-self to individual items */
+            #itemA {
+                align-self: flex-start; /* Align item A to the start of the cross-axis */
+            
+            }
+
+            #itemB {
+                align-self: flex-end; /* Align item B to the end of the cross-axis */
+            }
+
+            #itemD {
+                align-self: baseline; /* Align item D based on their baselines */
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </main>
+        
+    <main>        
+        <div id="itemA">A</div>
+        <div id="itemB">B</div>
+        <div id="itemC">C</div>
+        <div id="itemD">D</div>
+        <div id="itemE">E</div> 
+        
+    </main>
+    <!-- <section>
+        <iframe src="https://codepen.io/web-dot-dev/pen/bGgKNXq" frameborder="0" width="800" height="300"></iframe>
+    </section>
+    <section>
+        <iframe src="https://codepen.io/web-dot-dev/pen/WNRGdNZ" frameborder="0" width="800" height="300"></iframe>
+    </section>
+    <section>
+        <iframe src="https://codepen.io/web-dot-dev/pen/RwKGQee" frameborder="0" width="800" height="300"></iframe>
+    </section>   
+    <section>
+        <iframe src="https://codepen.io/web-dot-dev/pen/JjERpGb" frameborder="0" width="800" height="300"></iframe>
+    </section>
+    <section>
+        <iframe src="https://codepen.io/web-dot-dev/pen/QWdKmby" frameborder="0" width="800" height="300"></iframe>
+    </section>     -->
+</body>
+</html>
+
+<!--    Inspect and debug CSS Flexbox layouts in Chrome DevTools 
+    https://developer.chrome.com/docs/devtools/css/flexbox/ 
+-->

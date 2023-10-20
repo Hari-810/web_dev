@@ -4,7 +4,7 @@ Conditional statements:
 */
 
 // example of a simple conditional statement 
-var x = 5;
+var x = -1;
 if (x > 0) {
   console.log("x is positive");
 }
@@ -21,7 +21,7 @@ if (x > 0) {
 
 
 var x = 5;
-if (x > 10) {
+if (x > 10) {  
   console.log("x is greater than 10");
 } else if (x > 0) {
   console.log("x is greater than 0 but less than or equal to 10");
