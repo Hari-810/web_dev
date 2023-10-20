@@ -70,15 +70,19 @@ myFunction();
 // Temporal Dead Zone (TDZ)
 
 /*
-    the "Temporal Dead Zone" (TDZ) refers to the period of time before a variable 
-    declared with the var or const keyword is initialized. During this period, 
-    trying to access the variable will result in a ReferenceError.
+    The Temporal Dead Zone is a specific phase during variable declaration and initialization. 
+    Variables declared with let and const are not initialized at the top of their containing 
+    scope like var. Instead, they enter a "temporal dead zone" until the line of code where they
+    are declared is reached.
+
+    Accessing a variable in the TDZ results in a ReferenceError. 
+    You cannot reference a variable declared with let or const before 
+    its declaration in the code
 */
 
-console.log(x); // ReferenceError: x is not defined
-var x;
-x = 5;
-console.log(x); // 5
+console.log(x); // Throws a ReferenceError: Cannot access 'x' before initialization
+let x = 10;
+
 
 
 
@@ -127,25 +131,14 @@ function foo(){
     It is represented by three dots (…) followed by the parameter name
 */
 
-function sum(...numbers) {
+function sum(...numbers) { //    the numbers parameter is of the datatype Array. 
     var total = 0;
     for (const num of numbers) {
       total += num;
     }
     return total;
   }
-  
+  //   Assign values using rest parameter
   console.log(sum(1, 2, 3)); // Output: 6
   console.log(sum(4, 5, 6, 7)); // Output: 22
 
-//   Assign values using rest parameter
-function sum(...numbers) {
-    var total = 0;
-    for (const num of numbers) {
-      total += num;
-    }
-    return total;
-  }
-  
-  const result = sum(1, 2, 3, 4, 5);
-  console.log(result); // Output: 15

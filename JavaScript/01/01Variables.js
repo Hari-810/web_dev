@@ -1,13 +1,13 @@
 var fullName = "Java Script";
 
-
+console.log(fullName)
 /* 
 var:
     var is a keyword used for variable declaration in JavaScript (pre-ES6), 
     creating function-scoped variables that can be reassigned and hoisted.
 
 */
-var courseName = "Html css js ";
+var courseName = "Html css js 123";
 
 var isLoggedIn = false;  // true
 

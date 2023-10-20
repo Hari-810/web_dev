@@ -23,7 +23,7 @@ In which century were your born? find out by asking birth year. Use Math.floor f
 - Add true to your name and check output
 - Add 30+"learnjavascript" and check type of the final value.
 
-### Question 5
+### Question 5 
 
 Create Reverse Game. Ask any question with 2 possible answers. If user selects first option then show second option in alert and vice versa.
 

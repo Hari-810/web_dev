@@ -10,7 +10,7 @@ var cardInfo = true;
 
 
 //  SOLUTION 1
-/*
+
 if (isLoggedIn) {
   console.log("Logged IN Success");
   if (isEmailVerified) {
@@ -18,9 +18,15 @@ if (isLoggedIn) {
     if (cardInfo) {
       console.log("You can make a purchase");
     }
+    else{
+      console.log("You can't make a purchase");
+  }
+  }
+  else{
+    console.log("Email is Not verified");
   }
 }
-*/
+
 
 // SOLUTION 2
 /*

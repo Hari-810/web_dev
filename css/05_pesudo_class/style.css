@@ -45,7 +45,7 @@ a:active: This pseudo-class targets links when they are in an active state, typi
  */
 
 
-/* a:link, a:visited {
+  a:link, a:visited {
     background-color: hotpink;
     color: white;
     padding: 12px 25px;
