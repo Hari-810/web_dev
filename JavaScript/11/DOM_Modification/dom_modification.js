@@ -1,42 +1,47 @@
-
 // Inner text
-var value = document.getElementsByClassName("inner_text");
-console.log(value)
-if (value.length > 0) {
-    value[0].innerText = "Inner Text";
-    console.log(value);
-} else {
-    console.log("No elements with class 'org_text' found.");
-}
+// Get the element by its ID
+var element = document.getElementById("demo");
+
+// Retrieve the text content
+var textContent = element.innerText;
+console.log(textContent); // Output: "This is some text."
+
+// Set new text content
+element.innerText = "Updated text content.";
+ 
+
+// Inner HTML
+// Get the element by its ID
+var element = document.getElementById("container");
+
+// Retrieve the HTML content
+var htmlContent = element.innerHTML;
+console.log(htmlContent); // Output: "<p>This is a <strong>paragraph</strong>.</p>"
+
+// Set new HTML content
+element.innerHTML = "<p>Updated <em>HTML</em> content.</p>";
 
 
-
-// Innerhtml
-var value = document.getElementsByClassName("inner_html");
-value[0].innerHTML = "Inner HTML";
-
-
-// calc
-
-num1 = Number(document.getElementById("one").innerText);
-
-num2 = Number(document.getElementById("two").innerText);
-
-opr = document.getElementById("operation").innerText;
+// Calculator
+var num1 = Number(document.getElementById("one").innerText);
+var num2 = Number(document.getElementById("two").innerText);
+var opr = document.getElementById("operation").innerText;
 
 const res = (a, b, opr) => {
-    if (opr === "Addition") return a + b;
-    if (opr === "Subtraction") return a - b;
-    if (opr === "Multiplication") return a * b;
-    return a / b;
+    switch (opr) {
+        case "Addition":
+            return a + b;
+        case "Subtraction":
+            return a - b;
+        case "Multiplication":
+            return a * b;
+        case "Division":
+            return a / b;
+        default:
+            return "Invalid operation";
+    }
 };
 
-
-
-
-var result = res(num1,num2,opr);
-document.getElementById(
-    "result"
-).innerHTML = `<strong> Result was ${result} </strong>`;
-
-
+var result = res(num1, num2, opr);
+document.getElementById("result").innerHTML = `<strong> Result was ${result} </strong>`;
+    
