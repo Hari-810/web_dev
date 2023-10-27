@@ -1,5 +1,10 @@
-// This will open a dialog box in the browser or display a prompt in a Node.js environment.
-const userInput = prompt("Enter something:");
+var a = 0;
+var b = a++;
+console.log(a);
+console.log(b);
 
-// userInput will contain the value entered by the user.
-console.log("You entered: " + userInput);
+
+var c = 0;
+var d = ++c;
+console.log(c);
+console.log(d);
