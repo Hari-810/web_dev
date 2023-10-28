@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   h3Element.addEventListener("click", () => {
-      h3Element.style.fontSize = "50px";
+      h3Element.style.fontSize = "200px";
   });
 
   document.getElementById("changeColorButton").addEventListener("click", () => {
@@ -74,7 +74,7 @@ mouseleave: Fires when the mouse leaves an element's boundary.
               });
               div.addEventListener("mouseleave", () => {
                   div.style.backgroundColor = "white";
-              });
+              }); 
           </script>
 
 

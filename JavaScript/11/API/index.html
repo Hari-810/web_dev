@@ -4,12 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script.js" defer></script>
+    <script defer>
+    /*
+    fetch function is asynchronous in nature. 
+    It is used to make network requests (e.g., HTTP requests) 
+    to fetch data from a remote server or API. 
+    */
+    
+    function get_users(){
+        const url = "https://jsonplaceholder.typicode.com/users";
+
+        fetch(url)
+        .then(response => {
+            // Check if the response status is OK (200)
+            if (!response.ok) {
+            throw new Error(`Request failed with status: ${response.status}`);
+            }
+
+            // Parse the JSON response
+            return response.json();
+        })
+        .then(data => {
+            // Handle the JSON data here
+            console.log('Users data:', data);
+        })
+        .catch(error => {
+            // Handle any errors that occur during the request
+            console.error('Error:', error);
+        });
+    }
+    </script>
 </head>
 <body>
     <h1>API fetch</h1>
-    <h3>Customers Name</h3>
+    <h3>Click the button to view Customers </h3>
+    <button onclick=get_users()>click</button>
     <p></p>
 </body>
 </html>
 
+ <!-- better response handling. -->
+<!-- 
+
+    const url = "https://jsonplaceholder.typicode.com/users";
+const headers = {
+  "Accept": "application/json",
+  // You can add other headers here as needed
+};
+
+fetch(url, {
+  method: 'GET',
+  headers: headers
+})
+  .then(response => {
+    // Check if the response status is OK (200)
+    if (!response.ok) {
+      throw new Error(`Request failed with status: ${response.status}`);
+    }
+    // Parse the JSON response
+    return response.json();
+  })
+  .then(data => {
+    // Handle the JSON data here
+    console.log('Users data:', data);
+    // You can perform any other operations with the data here
+  })
+  .catch(error => {
+    // Handle any errors that occur during the request
+    console.error('Error:', error);
+  });
+
+ -->

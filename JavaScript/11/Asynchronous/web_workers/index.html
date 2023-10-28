@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Worker Example</title>
+</head>
+<body>
+  <button id="startButton">Start Worker</button>
+  <div id="output"></div>
+  <script>
+    const outputElement = document.getElementById('output');
+    const startButton = document.getElementById('startButton');
+
+    // Create a new Web Worker
+    const worker = new Worker('worker.js');
+
+    // Listen for messages from the worker
+    worker.onmessage = function (event) {
+      const resultFromWorker = event.data;
+      outputElement.innerHTML = 'Worker returned: ' + resultFromWorker;
+    };
+
+    // Start the worker when the button is clicked
+    startButton.addEventListener('click', function () {
+      outputElement.innerHTML = 'Worker is running...';
+      // Send a message to the worker
+      worker.postMessage('Hello from the main thread!');
+    });
+  </script>
+</body>
+</html>
+    
