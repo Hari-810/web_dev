@@ -23,8 +23,8 @@
 
         
 */
-/*
 
+/*
 console.log("Step 1");
 
 setTimeout(() => {
@@ -32,9 +32,9 @@ console.log("Step 2");
 }, 1000);  //1000ms (1 second) 
 
 console.log("Step 3");
-
-
 */
+
+
 
 // explanation
 // https://media.geeksforgeeks.org/wp-content/uploads/20210328211825/async1.png
@@ -128,6 +128,6 @@ such as user interactions and network requests.
    worker.onmessage = (event) => {
      console.log(event.data);
    };
-/*
+*/
 
-These are some of the common methods for handling asynchronous operations in JavaScript. Each has its own use cases and advantages, and the choice of which one to use depends on your specific requirements and coding style.
+// These are some of the common methods for handling asynchronous operations in JavaScript. Each has its own use cases and advantages, and the choice of which one to use depends on your specific requirements and coding style.

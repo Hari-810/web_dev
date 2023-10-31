@@ -9,7 +9,7 @@ Async/await:
     An asynchronous function returns a promise implicitly.
 
     await keyword is used to pause the execution of an asynchronous function until 
-        a promise is settled (resolved or rejected). S
+        a promise is settled (resolved or rejected). 
 It can only be used inside an async function.
 
 /*
