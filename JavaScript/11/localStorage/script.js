@@ -10,9 +10,8 @@ Cookie: Small text data stored in the browser, often used for short-term data an
 
 // local storage
 
-var data = localStorage.getItem("data");
-var element = document.querySelector("textarea");
-element.value = data;
+// var data = localStorage.getItem("data");
+
 function save() {
     var element = document.querySelector("textarea");
     var value = element.value;
