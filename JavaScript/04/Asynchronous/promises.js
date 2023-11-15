@@ -192,3 +192,38 @@ console.log(error.name + ' ' + error.message)
 })
 
 */
+// scenario where you use then with only the onRejected callback
+
+function fetchDataFromAPI() {
+  return new Promise((resolve, reject) => {
+    // Simulate an API request that may fail
+    const randomNumber = Math.random();
+    if (randomNumber < 0.5) {
+      // Resolve the promise with some data
+      resolve('Data successfully fetched');
+    } else {
+      // Reject the promise with an error message
+      reject('Error: Failed to fetch data');
+    }
+  });
+}
+
+fetchDataFromAPI()
+  .then(undefined, (error) => {
+    console.error('An error occurred:', error);
+  });
+
+// Explanation and Flow
+/*
+The fetchDataFromAPI function returns a Promise that simulates fetching data from an API. 
+It randomly resolves or rejects the promise.
+
+We use then with only the onRejected callback to handle any errors that occur during the promise execution. 
+If the promise is rejected, the provided onRejected callback is executed, and we log the error message 
+to the console.
+
+Using then with only the onRejected callback is useful when you are primarily interested in error handling 
+and don't need to perform any actions when the promise is successfully resolved. 
+It allows you to separate the error-handling logic from the success-handling logic, 
+making your code more organized and easier to read.
+*/

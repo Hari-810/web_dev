@@ -80,3 +80,20 @@ function calculateRectangleArea(length, width) {
     console.log("Program execution has ended.");
   }
   
+
+// *****************************************
+try {
+  // Code that may throw an error
+  throw new TypeError('This is a custom type error');
+} catch (error) {
+  if (error instanceof TypeError) {
+    // Handle specific TypeError
+    console.error('A TypeError occurred:', error.message);
+  } else if (error instanceof RangeError) {
+    // Handle specific RangeError
+    console.error('A RangeError occurred:', error.message);
+  } else {
+    // Handle other types of errors
+    console.error('An error occurred:', error.message);
+  }
+}
