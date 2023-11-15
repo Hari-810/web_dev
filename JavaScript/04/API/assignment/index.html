@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Examples</title>
+</head>
+<body>
+    <h1>Fetch API Examples</h1>
+    
+    <!-- Example 1: Fetch and display all user records -->
+    <h2>Example 1: Fetch and display all user records</h2>
+    <button id="fetchUsersButton">Fetch Users</button>
+    <div id="usersOutput"></div>
+    
+    <!-- Example 2: Fetch and display city names from user records -->
+    <h2>Example 2: Fetch and display city names from user records</h2>
+    <button id="fetchCitiesButton">Fetch Cities</button>
+    <div id="citiesOutput"></div>
+
+    <!-- Example 3: Fetch a specific post by ID -->
+    <h2>Example 3: Fetch a specific post by ID</h2>
+    <button id="fetchPostButton">Fetch Post</button>
+    <div id="postOutput"></div>
+
+    <!-- Example 4: POST data to the server -->
+
+        <h2>Example 4: POST data to the server</h2>
+        <form id="postDataForm">
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" required><br>
+        <label for="bodyInput">Body:</label>
+        <textarea id="bodyInput" required></textarea><br>
+        <button type="submit">Submit Data</button>
+        </form>
+        <div id="postDataOutput"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
