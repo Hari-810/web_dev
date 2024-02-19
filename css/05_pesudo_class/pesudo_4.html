@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Pseudo-Classes Demo</title>
+    <style>
+        /* Common styles for all links */
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        /* Unvisited links */
+        a:link {
+            color: rgb(57, 31, 206);
+            background-color: hotpink;
+            color: white;
+        }
+
+        /* Visited links */
+        a:visited {
+            color: rgb(207, 230, 207);
+        }
+
+        /* Hovered links */
+        a:hover {
+            color: chartreuse;
+            background-color: red;
+        }
+
+        /* Active links */
+        a:active {
+            color: darkmagenta;
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Link Pseudo-Classes Demo</h2>
+
+    <p>Click on the links and observe the different styles based on their states:</p>
+
+    <a href="#">Unvisited Link</a>
+    <a href="#" class="link_1">Unvisited Link with Class</a>
+
+    <!-- Visited link (for demonstration purposes, won't change color on subsequent runs) -->
+    <a href="#" style="color: purple;">Visited Link</a>
+
+    <a href="#">Normal Link</a>
+    <a href="#" class="link_1">Link with Class</a>
+
+</body>
+</html>
+
+
+<!-- 
+:link: Styles unvisited links, defining their appearance before being clicked.
+:visited: Styles visited links, altering their appearance after they have been clicked.
+:hover: Styles links when the cursor hovers over them, providing visual feedback during interaction.
+:active: Styles links in their active state, typically during a click before the mouse button is released, indicating the link is being interacted with.
+ -->

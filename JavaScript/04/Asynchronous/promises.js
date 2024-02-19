@@ -34,7 +34,7 @@ Promise Syntax:
 });
 
 */
-
+/*
 // Simulating an asynchronous operation with a setTimeout
 function fetchData() {
   return new Promise((resolve, reject) => {
@@ -62,7 +62,7 @@ fetchData()
   .catch((error) => {
     console.error(error); // This will run when the Promise is rejected
   });
-
+*/
 /*
 Explanation of the flow:
 
@@ -113,6 +113,8 @@ const fetchData = new Promise((resolve, reject) => {
     .catch((error) => {
       console.error("Error:", error);
     });
+
+
   /*
 Explanation and Flow:
 

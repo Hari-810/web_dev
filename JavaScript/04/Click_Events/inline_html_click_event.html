@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Event Handlers Example</title>
+</head>
+<body>
+
+<!-- Button with onclick event -->
+<button onclick="handleButtonClick()">Click me</button>
+
+<!-- Form with onsubmit event -->
+<form onsubmit="handleFormSubmit()">
+    <label for="textInput">Type something:</label>
+    <input type="text" id="textInput" onchange="handleInputChange()">
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Script section for JavaScript code -->
+<script>
+    // JavaScript functions for event handlers
+    function handleButtonClick() {
+        alert("Button clicked!");
+    }
+
+    function handleFormSubmit() {
+        alert("Form submitted!");
+    }
+
+    function handleInputChange() {
+        var inputValue = document.getElementById("textInput").value;
+        console.log("Input value changed: " + inputValue);
+    }
+</script>
+
+</body>
+</html>

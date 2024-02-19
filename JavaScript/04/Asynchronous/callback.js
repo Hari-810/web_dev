@@ -1,6 +1,6 @@
 /*
-Callbacks are often used to manage asynchronous operations, and t
-hey allow you to specify what should happen when an asynchronous task is completed.
+Callbacks are often used to manage asynchronous operations, and
+ they allow you to specify what should happen when an asynchronous task is completed.
 
 
 A callback function is a function that you pass as an argument to another function, 

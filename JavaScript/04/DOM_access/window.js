@@ -35,7 +35,8 @@ console.log(document)
 // DOM functions
 
 // document.getElementsByTagName: This function returns a collection of elements with the specified tag name.
-var element = document.getElementsByTagName("h1").value;
+var element = document.getElementsByTagName("h1");
+console.log("hello ")
 console.log(element);
 
 // document.getElementById: This function returns an element by its ID attribute.

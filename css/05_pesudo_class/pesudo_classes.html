@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Pseudo-classes Demo</title>
+
+    <style>
+        /* Basic styling for demonstration */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p, li {
+            margin-bottom: 10px;
+        }
+
+        /* Styling for pseudo-classes demonstration */
+        p:first-child {
+            color: green; /* Change color of the first paragraph */
+        }
+
+        p:last-child {
+            color: blue; /* Change color of the last paragraph */
+        }
+
+        p:nth-child(2n) {
+            background-color: #f2f2f2; /* Apply background color to even paragraphs */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline the link on hover */
+        }
+
+        li:nth-child(odd) {
+            color: purple; /* Change color of odd list items */
+        }
+
+        input:required {
+            border-color: red; /* Change border color for required input fields */
+        }
+
+        input[type="text"]:focus {
+            background-color: #e0e0e0; /* Change background color on focus for text inputs */
+        }
+
+        :empty {
+            display: none; /* Hide any empty elements */
+        }
+
+        a:not(.external) {
+            color: brown; /* Change color for internal links */
+        }
+
+        div:only-child {
+            border: 1px solid orange; /* Add border to div elements that are the only child */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comprehensive Pseudo-classes Demo</h1>
+
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+
+    <a href="https://www.example.com" class="external">External Link</a>
+    <a href="internal.html">Internal Link</a>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div>
+        <p>Only child div</p>
+    </div>
+
+</body>
+</html>

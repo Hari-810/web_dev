@@ -98,12 +98,12 @@ greet_default_para('Jane Smith');  // Output: "Hello, Jane Smith!"
   when you pass an argument to a function, the function receives a reference 
   to the value, rather than a copy of the value. 
   This means that when you modify the argument within the function, 
-  you are actually modifying the original value.
+  you are actually modifying the copied value.
 */
 let x = 10;
 
-function addFive(num) {
-  num += 5;
+function addFive(x) {
+  x += 5; 
 }
 
 addFive(x);

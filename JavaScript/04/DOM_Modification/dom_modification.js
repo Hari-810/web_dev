@@ -19,7 +19,7 @@ var htmlContent = element.innerHTML;
 console.log(htmlContent); // Output: "<p>This is a <strong>paragraph</strong>.</p>"
 
 // Set new HTML content
-element.innerHTML = "<p>Updated <em>HTML</em> content.</p>";
+element.innerHTML = "<h4>Updated <em>HTML</em> content.</h4>";
 
 
 // Calculator
