@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Pseudo-Classes Demo</title>
+    <style>
+        /* Common styles for all links */
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid transparent; /* Adding border for visual clarity */
+            transition: all 0.3s ease; /* Adding transition for smooth animation */
+        }
+
+        /* Unvisited links */
+        a:link {
+            color: rgb(57, 31, 206);
+            background-color: hotpink;
+        }
+
+        /* Visited links */
+        a:visited {
+            color: rgb(207, 230, 207);
+        }
+
+        /* Hovered links */
+        a:hover {
+            color: chartreuse;
+            background-color: red;
+            border-color: black; /* Adding border color change on hover */
+        }
+
+        /* Active links */
+        a:active {
+            color: darkmagenta;
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Link Pseudo-Classes Demo</h2>
+
+    <p>Click on the links and observe the different styles based on their states:</p>
+
+    <!-- Unvisited Link -->
+    <a href="#">Unvisited Link</a>
+
+    <!-- Unvisited Link with Class -->
+    <a href="#" class="link_1">Unvisited Link with Class</a>
+
+    <!-- Visited Link (for demonstration purposes, won't change color on subsequent runs) -->
+    <a href="#" style="color: purple;">Visited Link</a>
+
+    <!-- Normal Link -->
+    <a href="#">Normal Link</a>
+
+    <!-- Link with Class -->
+    <a href="#" class="link_1">Link with Class</a>
+
+</body>
+</html>
