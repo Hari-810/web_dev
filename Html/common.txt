@@ -1,0 +1,12 @@
+What is html?
+
+HTML stands for HyperText Markup Language.
+It is the standard markup language used to create and design documents on the World Wide Web.
+HTML documents are comprised of elements, which are the building blocks of web pages.
+These elements are represented by tags, enclosed in angle brackets, such as <html>, <head>, <title>, <body>, etc.
+HTML is used to structure content on web pages, including text, images, links, forms, and multimedia. 
+It provides a way to format and organize information so that it can be displayed in web browsers.
+Additionally, HTML works in conjunction with other technologies like CSS (Cascading Style Sheets) and JavaScript to enhance the presentation and functionality of web pages.
+
+
+
