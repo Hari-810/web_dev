@@ -28,55 +28,61 @@ const myObject = {
   JavaScript.
 */
 
-// create Object using new keyword
 
-/*
-  To create an object using the new keyword in JavaScript, you can define a 
-  constructor function and use the new keyword to instantiate an object of that type. Here's an example:
-*/
+// Using the new Object() Constructor
+/* You can create an object using the new Object() constructor.*/
+const person = new Object();
+person.name = 'John';
+person.age = 30;
+person.city = 'New York';
 
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
+
+// Object.create() Method
+/* You can create a new object with the specified prototype object and properties.*/
+const personPrototype = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+const person = Object.create(personPrototype);
+
+
+// Using ES6 Classes
+/* You can define objects using ES6 class syntax.*/
+class Person {
+  constructor(name, age, city) {
+      this.name = name;
+      this.age = age;
+      this.city = city;
   }
-  
-  // Create a new instance of the Person object
-const john = new Person('John', 30);
+}
 
-console.log(john); // Output: { name: 'John', age: 30 }
+const person = new Person('John', 30, 'New York');
 
 
-var person = {
-    name: "John",
-    age: 30,
-    sayHello: function() {
-      console.log("Hello!");
-    },
-    make: "Toyota",
-    features: ["red", "2.5L", "automatic"],
-    start: function() {
-        console.log('Starting the car...')
-      },
-    drive: function(speed) {
-    console.log(`Driving at ${speed} mph...`)
-    },
-    stop: function() {
-      console.log('Stopping the car.')  
-    }
-  };
-//   you can access the name property using dot notation
-console.log(person.name); // Output: "John"
-//  also you can use bracket annotation
-console.log(person["name"]);
-// you can call a method of an object using dot notation
-person.sayHello(); // Output: "Hello!"
-// Array inside an Object   
-console.log(person.features[0]);
-console.log(person["features"][1]); // Output: "2.5L"
-// Function inside an Object
-person.start(); // Output: Starting the car...
-person.drive(50); // Output: Driving at 50 mph...
-person.stop(); // Output: Stopping the car.
+// Dynamic Population
+/* You can create an empty object and add properties dynamically.*/
+const person = {};
+person.name = 'John';
+person.age = 30;
+person.city = 'New York';
+
+
+// Using Object.assign()
+/* You can create a new object by merging multiple objects together. */
+const personDetails = { name: 'John' };
+const additionalDetails = { age: 30, city: 'New York' };
+
+const person = Object.assign({}, personDetails, additionalDetails);
+
+
+// Using JSON.parse()
+/*  You can create an object from a JSON string using JSON.parse(). */
+const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+const person = JSON.parse(jsonString);
+
+//***************************************************************************************************//
 
 
 // Object functions : Keys(), Values(), entries()

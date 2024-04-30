@@ -11,27 +11,34 @@ JavaScript has 8 Datatypes
 8. Object
 */
 
-// Numbers:
+// Numbers: Represents numeric values
 var length = 16;
 var weight = 7.5;
 
-// Strings:
+// Strings: Represents textual data
 var color = "Yellow";
 var lastName = "Johnson";
 
-// Booleans
+// Booleans: Represents textual data
 var x = true;
 var y = false;
 
-// Object:
+// Object: Represents a collection of key-value pairs
 const person = {firstName:"John", lastName:"Doe"};
 
-// Array object:
+// Array: Represents an ordered list of values.
 const cars = ["Saab", "Volvo", "BMW"];
 
-// Date object:
+// Date object: Represents dates and times.
 const date = new Date("2022-03-25");
 
+// Undefined object: Represents a variable that has been declared but not assigned a value.
+let x;
+console.log(x); // Output: undefined
+
+// Null: Represents the absence of a value
+let y = null;
+console.log(y); // Output: null
 
 
 /*
@@ -95,7 +102,8 @@ var z = 123e-5;   // 0.00123
 /*
 JavaScript BigInt
     All JavaScript numbers are stored in a a 64-bit floating-point format.
-*/
+    Represents whole numbers larger than 2^53 - 1 or less than -(2^53 - 1).
+    */
 
 var b = BigInt("123456789012345678901234567890");
 
@@ -123,7 +131,7 @@ JavaScript Arrays
 */
 
 var car = ["Saab", "Volvo", "BMW"];
-
+let mixedArray = [1, 'Alice', true, { key: 'value' }];
 // Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
 
 

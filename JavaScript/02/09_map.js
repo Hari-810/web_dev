@@ -11,6 +11,16 @@
     Overall, maps provide a convenient way to manage collections of data in JavaScript.
 */
 
+// Object Literal
+var fruits = {
+  'apple': 10,
+  'banana': 5,
+  'orange': 8
+};
+
+
+
+
 // Create new Map 
 /*
     To create a new map in JavaScript, you can use the Map constructor function.
@@ -34,6 +44,8 @@ for (let [key, value] of myMap) {
     console.log(key, value);
   }
 
+
+
 // add value in a map
 /* 
   add a key-value pair to a JavaScript map, you can use the set() method.
@@ -54,3 +66,52 @@ var myMap = new Map([
     ['key1', 'value1'],
     ['key2', 'value2']
   ]);
+
+var fruits = new Map([
+    ['apple', 10],
+    ['banana', 5],
+    ['orange', 8]
+]);
+
+
+// Dynamic Population
+var fruits = new Map();
+fruits.set('apple', 10);
+fruits.set('banana', 5);
+fruits.set('orange', 8);
+
+
+
+// Nested Maps
+var inventory = new Map([
+  ['fruits', new Map([
+      ['apple', 10],
+      ['banana', 5],
+      ['orange', 8]
+  ])],
+  ['vegetables', new Map([
+      ['carrot', 15],
+      ['spinach', 20],
+      ['tomato', 12]
+  ])]
+]);
+
+
+// Using Object Methods
+var fruits = {};
+fruits.apple = 10;
+fruits.banana = 5;
+fruits.orange = 8;
+
+
+// Using Object.assign()
+var apple = { name: 'apple', quantity: 10 };
+var banana = { name: 'banana', quantity: 5 };
+var orange = { name: 'orange', quantity: 8 };
+
+var fruits = Object.assign({}, apple, banana, orange);
+
+
+// Using ES6 Object Shorthand
+var apple = 10, banana = 5, orange = 8;
+var fruits = { apple, banana, orange };
