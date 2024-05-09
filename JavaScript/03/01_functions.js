@@ -116,8 +116,8 @@ console.log(x);  // Output: 10
 */
 let arr = [1, 2, 3];
 
-function addOne(arr) {
-  arr.push(4);
+function addOne(arr_var) {
+  arr_var.push(4);
 }
 
 addOne(arr);
