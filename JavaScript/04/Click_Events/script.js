@@ -101,18 +101,17 @@ keypress: Fires when a key is pressed and released.
               });
           </script>
 
-input: Fires when the value of an input element changes.
-change: Fires when the value of a form element (like a <select> or <input type="checkbox">) changes.
-submit: Fires when a form is submitted.
-focus: Fires when an element gains focus (e.g., through clicking or tabbing).
-blur: Fires when an element loses focus.
-load: Fires when a resource (e.g., an image or a page) finishes loading.
-unload: Fires when a resource is about to be unloaded (e.g., when the page is being closed).
-resize: Fires when the window or an element is resized.
-scroll: Fires when the content of an element is scrolled.
-contextmenu: Fires when the context menu (right-click menu) is triggered.
-touchstart: Fires when a touch event starts on a touch-enabled device.
-touchmove: Fires when a touch point is moved during a touch event.
-touchend: Fires when a touch event ends on a touch-enabled device.
+Event:	        Occurs When
+
+onclick	        The user clicks on an element
+oncontextmenu	The user right-clicks on an element
+ondblclick	    The user double-clicks on an element
+onmousedown	    A mouse button is pressed over an element
+onmouseenter	The pointer is moved onto an element
+onmouseleave	The pointer is moved out of an element
+onmousemove	    The pointer is moving over an element
+onmouseout	    The mouse pointer moves out of an element
+onmouseover	    The mouse pointer is moved over an element
+onmouseup	    The mouse button is released over an element
 
 */
