@@ -1,0 +1,93 @@
+Step 1: click create datab button to create a Database called " pratice " under that create a new collection called  " users " and paste down the below document:
+Step 2: click add data button and select insert below document:
+
+        {
+            "username": "john_doe",
+            "email": "john.doe@example.com",
+            "password": "securepassword123",
+            "gender": "male",
+            "address": {
+                "street": "123 Main St",
+                "city": "Anytown",
+                "state": "CA",
+                "zipCode": "12345",
+                "country": "USA"
+                }
+        }    
+
+to insert multiple documents use JSON array format:
+    [
+        {
+            "username": "jane_smith",
+            "email": "jane.smith@example.com",
+            "password": "anothersecurepassword",
+            "gender": "female",
+            "address": {
+                "street": "456 Elm St",
+                "city": "Othertown",
+                "state": "NY",
+                "zipCode": "67890",
+                "country": "USA"
+            }
+        },
+        {
+            "username": "sam_brown",
+            "email": "sam.brown@example.com",
+            "password": "yetanotherpassword",
+            "gender": "male",
+            "address": {
+                "street": "789 Oak St",
+                "city": "Sometown",
+                "state": "TX",
+                "zipCode": "54321",
+                "country": "USA"
+            }
+        }
+    ]
+
+
+
+
+Also we can use Mongoshell to perform operations:
+
+open Mongosh on leftbottom corner on your compas:
+
+by default they pointing to test database, to change to "pratice"
+    
+    " use pratice"
+
+then execute the below 
+
+    db.users.insertMany([
+    {
+        "username": "alice_wonder",
+        "email": "alice.wonder@example.com",
+        "password": "alicepassword123", // Note: Hash passwords in a real application
+        "gender": "female",
+        "address": {
+            "street": "101 Wonderland Ave",
+            "city": "Wonderland",
+            "state": "IL",
+            "zipCode": "98765",
+            "country": "USA"
+        }
+    },
+    {
+        "username": "bob_builder",
+        "email": "bob.builder@example.com",
+        "password": "bobthebuilder", // Note: Hash passwords in a real application
+        "gender": "male",
+        "address": {
+            "street": "202 Builder St",
+            "city": "Construct",
+            "state": "CA",
+            "zipCode": "45678",
+            "country": "USA"
+        }
+    }
+])
+
+
+----- for reference : https://www.mongodb.com/docs/mongodb-shell/reference/methods/ -----
+
+------ MongoDB cheat sheet: https://www.mongodb.com/developer/products/mongodb/cheat-sheet/#updates -------------------
