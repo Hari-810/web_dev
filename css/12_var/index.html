@@ -1,76 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS Variables Example</title>
 <style>
-  /* Global CSS variables */
-  :root {
-    --primary-color: #007bff; /* Global variable */
-  }
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
 
-  /* Local CSS variables */
-  .container {
-    --bg-color: #f8f9fa; /* Local variable */
-    --text-color: #212529; /* Local variable */
-  }
+body {
+  background-color: var(--blue);
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: var(--bg-color); /* Using local variable */
-    color: var(--text-color); /* Using local variable */
-  }
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
 
-  .header {
-    background-color: var(--primary-color); /* Using global variable */
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
+.container {
+  --local-padding: 20px; /* Local scope variable */
+  --modify-colorvalue: #229f2a;
+  color: var(--modify-colorvalue);
+  background-color: var(--white);
+  padding: var(--local-padding);
+}
 
-  .content {
-    padding: 20px;
-  }
-
-  .footer {
-    background-color: var(--primary-color); /* Using global variable */
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
+button {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
 </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>CSS Variables Example</h1>
-    </div>
-    <div class="content">
-      <p>This is an example of using CSS variables with both global and local scope.</p>
-    </div>
-    <div class="footer">
-      <p>Footer</p>
-    </div>
-  </div>
+
+<h1>Using the var() Function</h1>
+
+<div class="container">
+  <h2>CSS Variables</h2>
+  <p>CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.</p>
+  <p>Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.  <p>
+    <button>Yes</button>
+    <button>No</button>
+  </p>
+</div>
+
 </body>
 </html>
-
-
-<!-- 
-
-In CSS, --var is used to declare a custom property, also known as a CSS variable. 
-CSS variables allow you to define reusable values that can be used throughout your CSS stylesheets. 
-They are prefixed with -- to distinguish them from regular CSS properties.
-
- -->
-
- <!-- 
-
-    In this HTML document:
-
-        Global CSS variables are declared using :root.
-        Local CSS variables are declared within the .container selector.
-        Global variables are used for the background color of the header and footer.
-        Local variables are used for the background and text color of the body.
-  -->
