@@ -56,10 +56,11 @@ square brackets after the name of the array.
 */
 
 var myArray_frutis = ["apple", "banana", "orange"];
+console.log(myArray_frutis); // Output: ["apple", "banana", "orange"]
 console.log(myArray_frutis[0]); // Output: "apple"
 console.log(myArray_frutis[1]); // Output: "banana"
 console.log(myArray_frutis[2]); // Output: "orange"
-
+console.log(myArray_frutis[3]); // Output: undefined
 //***************************************************************************************************//
 
 // Modifying Elements

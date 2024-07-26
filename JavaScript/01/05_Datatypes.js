@@ -27,7 +27,7 @@ var y = false;
 const person = {firstName:"John", lastName:"Doe"};
 
 // Array: Represents an ordered list of values.
-const cars = ["Saab", "Volvo", "BMW"];
+const cars = ["Audi", "Volvo", "BMW"];
 
 // Date object: Represents dates and times.
 const date = new Date("2022-03-25");
