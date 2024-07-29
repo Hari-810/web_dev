@@ -60,6 +60,9 @@ class Person {
 
 const person = new Person('John', 30, 'New York');
 
+const person2 = new Person('rick', 30, 'New York');
+
+
 
 // Dynamic Population
 /* You can create an empty object and add properties dynamically.*/

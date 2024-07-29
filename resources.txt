@@ -1,4 +1,10 @@
 Playlist:
+    https://youtube.com/playlist?list=PLSDeUiTMfxW7lm7P7GZ8qtNFffHAR5d_w&si=LcLRNQZH3CYyzqCz
+
+    https://youtube.com/playlist?list=PLjwm_8O3suyOwElnplQ3quKEHsOuHyP9R&si=wJPbl93zUibwiHlL
+
+    https://youtu.be/NfvtQ2p5QG4?si=qql8Tk3gSWTlykuj
+
     https://youtube.com/playlist?list=PLImJ3umGjxdD3ov2lwg0SM5rxz5v9FjOf&si=IPuykioTUIsx4Kj2
 
     https://www.youtube.com/playlist?list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz
