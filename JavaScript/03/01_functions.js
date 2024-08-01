@@ -21,7 +21,7 @@ To execute the code within a function, you can call the function by its name,
 followed by a set of parentheses
 */
 function add(a, b) {
-  return a + b;
+  console.log(a,b)
 }
 var result = add(3, 4);  // result = 7
 console.log(result)
@@ -87,7 +87,7 @@ function greet_default_para(name='John Doe') {
   console.log(`Hello, ${name}!. It's an example for default parameter`);
 }
 
-greet_default_para();  // Output: "Hello, John Doe!"
+greet_default_para("hv");  // Output: "Hello, John Doe!"
 
 // if the function is called with an argument for name, that argument will be used instead of the default value:
 greet_default_para('Jane Smith');  // Output: "Hello, Jane Smith!"
@@ -197,3 +197,11 @@ function incrementCounter() {
 }
 
 setInterval(incrementCounter, 1000);
+
+
+var str_val = "Hi there";
+console.log(str_val[0]);
+console.log(str_val[-1]);
+console.log(str_val.length);
+console.log(str_val.substring(0, 2));
+console.log(str_val.substring(3));

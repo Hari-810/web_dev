@@ -1,3 +1,33 @@
+What is git and github
+What is version control
+What is Github desktop
+What is Cloud
+What is Hosting
+What is Linux os/ windows os
+What is Command prompt
+What is Powershell
+Script language vs programming languages
+
+Blog:
+    https://www.geeksforgeeks.org/how-to-approach-a-coding-problem/
+
+    https://medium.com/hackernoon/how-to-approach-any-coding-problem-9230f3ad6f9
+
+
+Binary code work
+    https://www.youtube.com/watch?v=wgbV6DLVezo
+
+1s and 0s
+    https://www.youtube.com/watch?v=Xpk67YzOn5w
+
+Programming vs Coding
+    https://www.youtube.com/watch?v=CIRGjwYgdT4
+
+    https://www.youtube.com/live/LA2LIBZGink?si=2lDFNPOqHes-r9tX
+
+    https://youtu.be/rdKX9hzA2lU?si=P7bhXJEaliWA8f4e
+
+
 Playlist:
     https://youtube.com/playlist?list=PLSDeUiTMfxW7lm7P7GZ8qtNFffHAR5d_w&si=LcLRNQZH3CYyzqCz
 
