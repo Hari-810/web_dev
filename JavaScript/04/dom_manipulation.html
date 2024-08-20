@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Example</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+      #dynamicElement {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header">Hello, World!</h1>
+    <p class="intro">This is a paragraph.</p>
+    <p class="intro">This is another paragraph.</p>
+    <div id="container">
+      <p>This is inside a div.</p>
+    </div>
+    <button id="changeText">Change Text</button>
+    <button id="addElement">Add Element</button>
+    <button id="toggleClass">Toggle Highlight</button>
+
+    <form id="myForm">
+      <input type="text" id="nameInput" value="John Doe" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      // 1. Accessing DOM Elements
+      //  The script selects elements by ID, class, and tag name.
+      const header = document.getElementById("header");
+      const paragraphs = document.getElementsByClassName("intro");
+      const container = document.querySelector("#container");
+      const allParagraphs = document.querySelectorAll("p");
+
+      // 2. Modifying DOM Elements
+      //   It changes the inner HTML and text content of elements.
+      header.innerHTML = "Welcome to the DOM Manipulation Demo!";
+      paragraphs[0].textContent = "This paragraph text has been modified.";
+
+      // 3. Creating and Inserting Elements
+      //   It creates new elements and inserts them into the DOM(appended to a container).
+      const newElement = document.createElement("p");
+      newElement.textContent = "This is a new dynamically created paragraph.";
+      container.appendChild(newElement);
+
+      // 4. Event Handling
+      //   Button clicks change text and add new elements dynamically.
+      const changeTextButton = document.getElementById("changeText");
+      changeTextButton.addEventListener("click", function () {
+        header.innerHTML = "Text changed by button click!";
+      });
+
+      const addElementButton = document.getElementById("addElement");
+      addElementButton.addEventListener("click", function () {
+        const anotherElement = document.createElement("p");
+        anotherElement.id = "dynamicElement";
+        anotherElement.textContent = "Another paragraph added dynamically.";
+        container.appendChild(anotherElement);
+      });
+
+      const toggleClassButton = document.getElementById("toggleClass");
+      toggleClassButton.addEventListener("click", function () {
+        newElement.classList.toggle("highlight");
+      });
+
+      // 5. Traversing the DOM
+      //   It traverses the DOM tree and returns the first child node.
+      const firstParagraph = container.firstChild; // Accesses the first child node
+      console.log("First child node inside container:", firstParagraph);
+
+      // 6. Form and Input Handling
+      //   It handles form submission and input changes.
+      const form = document.getElementById("myForm");
+      const nameInput = document.getElementById("nameInput");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevents form submission
+        alert("Form Submitted! Name: " + nameInput.value);
+      });
+
+      // 7. Classes and Attributes
+      //   It manipulates classes and attributes. Classes are added, and custom attributes are set on elements
+      header.setAttribute("data-info", "This is the header"); // Sets a custom attribute
+      console.log(
+        "Header data-info attribute:",
+        header.getAttribute("data-info")
+      );
+      header.classList.add("highlight"); // Adds a class to the header
+
+      // 8. Dynamic Styling
+      header.style.color = "blue"; // Changes the color of the header
+    </script>
+  </body>
+</html>

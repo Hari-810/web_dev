@@ -1,6 +1,6 @@
 /* External CSS */
 
-h1, p{
+h1{
     background-color: blue;
-    color: rgb(121, 220, 16);
+    color: red;
 }
