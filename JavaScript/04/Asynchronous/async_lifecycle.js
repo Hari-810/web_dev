@@ -1,3 +1,5 @@
+// https://media.geeksforgeeks.org/wp-content/uploads/20210328211825/async1.png
+
 // Call Stack:
 
 /*
@@ -7,7 +9,16 @@ When the function completes, it is removed from the stack.
 JavaScript is single-threaded, meaning it can only execute one function at a time, 
 which makes the call stack a critical component.
 */
+function a() {
+  console.log("A");
+}
 
+function b() {
+  console.log("B");
+  a();
+}
+
+b();
 /*
 function foo() {
     console.log("foo");
@@ -28,14 +39,12 @@ and when it's done, it's removed.
 The flow is bar() added-> foo() added-> foo() removed -> bar() removed.
 */
 
-
 // Callback Queue:
 /*
 The callback queue is a queue (FIFO - First In, First Out) that stores callback functions, 
 often from asynchronous operations like setTimeout, fetch, or event listeners. 
 When these asynchronous tasks complete, their callbacks are placed in the callback queue.
 */
-
 
 // Event Loop:
 /*
@@ -55,19 +64,18 @@ This is where "Async Jobs" come into play.
 console.log("Start");
 
 setTimeout(function () {
-   console.log("Timeout 1");
+  console.log("Timeout 1");
 }, 0);
 
 setTimeout(function () {
-   console.log("Timeout 2");
+  console.log("Timeout 2");
 }, 0);
 
 Promise.resolve().then(function () {
-   console.log("Promise 1");
+  console.log("Promise 1");
 });
 
 console.log("End");
-
 
 /*
 
