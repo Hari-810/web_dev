@@ -19,27 +19,27 @@ We'll create a function that fetches user data asynchronously and then displays 
 */
 /*
 async function fetchUserData() {
-    console.log("Fetching user data...");
-    // Simulate a delay, e.g., fetching data from an API
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log("User data fetched!");
-    return { name: "John Doe" };
-  }
-  
+  console.log("Fetching user data...");
+  // Simulate a delay, e.g., fetching data from an API
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  console.log("User data fetched!");
+  return { name: "John Doe" };
+}
+
 async function displayUserName() {
-try {
+  try {
     const userData = await fetchUserData();
     console.log("User name:", userData.name);
-} catch (error) {
+  } catch (error) {
     console.error("Error:", error);
-}
+  }
 }
 
 console.log("Start");
 displayUserName().then(() => {
-console.log("End");
+  console.log("End");
 });
- */
+*/
 /*
 1. The fetchUserData function is declared as an async function. 
     It implicitly returns a promise when called.
@@ -74,28 +74,26 @@ console.log("End");
 */
 
 async function fetchData() {
-    console.log("Fetching data...");
-    // Simulate a delay, e.g., fetching data from an API
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log("Data fetched!");
-    return { data: "Some data" };
-  }
-  
-  function processOtherData() {
-    console.log("Processing other data...");
-    return "Processed other data";
-  }
-  
-  console.log("Start");
-  
-  fetchData().then((result) => {
-    console.log("Fetched data:", result.data);
-  });
-  
-  console.log("Doing something else...");
-  
-  const processedData = processOtherData();
-  console.log("Processed data:", processedData);
-  
+  console.log("Fetching data...");
+  // Simulate a delay, e.g., fetching data from an API
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  console.log("Data fetched!");
+  return { data: "Some data" };
+}
+
+function processOtherData() {
+  console.log("Processing other data...");
+  return "Processed other data";
+}
+
+console.log("Start");
+
+fetchData().then((result) => {
+  console.log("Fetched data:", result.data);
   console.log("End");
- 
+});
+
+console.log("Doing something else...");
+
+const processedData = processOtherData();
+console.log("Processed data:", processedData);
