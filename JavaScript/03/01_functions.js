@@ -10,7 +10,8 @@
 A function is defined using the function keyword, followed by the function name, 
 a set of parentheses, and a block of code within curly braces
 */
-function greet() {   //Function declaration
+function greet() {
+  //Function declaration
   console.log("Hello, world!");
 }
 
@@ -21,10 +22,11 @@ To execute the code within a function, you can call the function by its name,
 followed by a set of parentheses
 */
 function add(a, b) {
-  console.log(a,b)
+  console.log(a, b);
+  return a + b;
 }
-var result = add(3, 4);  // result = 7
-console.log(result)
+var result = add(3, 4); // result = undefined
+console.log(result);
 
 //  FUNCTION EXPRESSION
 /*
@@ -32,17 +34,17 @@ console.log(result)
   It is similar to a function declaration, but instead of using the function keyword,
   a function expression is assigned to a variable using the assignment operator (=).
 */
-var greet_func_exp = function() {
+var greet_func_exp = function () {
   console.log("Hello, world! It's a Function Expression");
-}
+};
 
 greet_func_exp(); // Output: "Hello, world! It's a Function Expression"
 
 // Function expressions can also take parameters, which allows the function to accept input from the calling code
-var add = function(a, b) {
+var add = function (a, b) {
   return a + b;
-}
-var result = add(3, 4);  // result = 7
+};
+var result = add(3, 4); // result = 7
 
 // ARROW FUNCTION
 /*
@@ -52,11 +54,11 @@ var result = add(3, 4);  // result = 7
 */
 let greet_arrow_fun = () => {
   return "Hello, world! It's a Arrow Function";
-}
+};
 console.log(greet_arrow_fun()); // Output: "Hello, world! It's a Arrow Function"
 
 let add_arrow_fun = (a, b) => a + b;
-console.log(add_arrow_fun(3, 4));  // Output: 7
+console.log(add_arrow_fun(3, 4)); // Output: 7
 
 //  Function calling from other function
 /*
@@ -75,7 +77,15 @@ function innerFunction() {
 
 outerFunction();
 
+// Wrapper function
+function Outer() {
+  function innerFunction() {
+    console.log("Inner");
+  }
+  innerFunction();
+}
 
+Outer();
 //  DEFAULT PARAMETER
 /*
   default parameters are values that are assigned to a function's parameters 
@@ -83,15 +93,11 @@ outerFunction();
   These default values can be defined in the function's definition, and are used 
   when the function is called without passing any arguments for that parameter.
 */
-function greet_default_para(name='John Doe') {
+function greet_default_para(name = "John") {
   console.log(`Hello, ${name}!. It's an example for default parameter`);
 }
-
-greet_default_para("hv");  // Output: "Hello, John Doe!"
-
-// if the function is called with an argument for name, that argument will be used instead of the default value:
-greet_default_para('Jane Smith');  // Output: "Hello, Jane Smith!"
-
+greet_default_para(); // Output: "Hello, John!. It's an example for default parameter"
+greet_default_para("hv"); // Output: "Hello, hv!. It's an example for default parameter"
 
 // passing arguments: VALUE vs REFERENCE
 /*
@@ -107,7 +113,7 @@ function addFive(num) {
 }
 
 addFive(x);
-console.log(x);  // Output: 10
+console.log(x); // Output: 10
 
 /*
   when passing objects and arrays, the function gets a reference to the original 
@@ -121,7 +127,7 @@ function addOne(arr_var) {
 }
 
 addOne(arr);
-console.log(arr);  // Output: [1, 2, 3, 4]
+console.log(arr); // Output: [1, 2, 3, 4]
 
 /*
 
@@ -182,7 +188,7 @@ function sayHello() {
 
 setTimeout(sayHello, 2000);
 
-// setInterval 
+// setInterval
 /*
   setInterval is a JavaScript function that allows you to schedule a function to be 
   executed repeatedly at a specified interval of time (in milliseconds). 
@@ -197,7 +203,6 @@ function incrementCounter() {
 }
 
 setInterval(incrementCounter, 1000);
-
 
 var str_val = "Hi there";
 console.log(str_val[0]);
