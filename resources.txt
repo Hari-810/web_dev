@@ -35,7 +35,14 @@ Playlist:
 
     https://youtu.be/NfvtQ2p5QG4?si=qql8Tk3gSWTlykuj
 
+
+Html & CSS
+    https://www.codingnepalweb.com/category/html-and-css/
+    
     https://youtube.com/playlist?list=PLImJ3umGjxdD3ov2lwg0SM5rxz5v9FjOf&si=IPuykioTUIsx4Kj2
+
+
+Html & CSS & JS
 
     https://www.youtube.com/playlist?list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz
 
