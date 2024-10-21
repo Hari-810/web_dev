@@ -1,0 +1,124 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Ninja Pro - the Book</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Basic grid layout example -->
+    <!-- The Bootstrap grid system uses a series of containers, rows, and columns to layout and align content. 
+       The grid has 12 columns per row and is fully responsive. Columns can span across multiple rows and adapt to screen size. -->
+    <div class="container-lg my-5">
+      <h2>basic grid</h2>
+      <div class="row">
+        <div class="col">
+          <!-- The .col class defines equal-width columns -->
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column widths example -->
+    <!-- The grid allows for custom column widths using .col-{size}-{n}. The number after 'col' determines how many 
+       of the 12 available columns the element should span. For example, .col-6 spans 6 out of 12 columns. -->
+    <div class="container-lg my-5">
+      <h2>column widths</h2>
+      <div class="row">
+        <div class="col-6">
+          <!-- This column takes up half (6 out of 12) of the available space -->
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-3">
+          <!-- This column takes up 3/12 of the row, which is one-fourth of the row width -->
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Responsive column widths example -->
+    <!-- Using the responsive grid system, we can define column widths based on screen size breakpoints.
+       For example, col-sm-4 will span 4 columns on small screens (sm), and col-lg-6 spans 6 on large (lg) screens. -->
+    <div class="container-lg my-5">
+      <h2>responsive column widths</h2>
+      <div class="row gy-3">
+        <!-- gy-3 adds gutter space (spacing between columns) in the y direction (vertical) -->
+        <div class="col-sm-4 col-lg-6">
+          <!-- This column spans 4 columns on small screens and 6 columns on large screens -->
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-sm-4 col-lg-3">
+          <!-- This column spans 4 columns on small screens and 3 columns on large screens -->
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-sm-4 col-lg-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Justifying columns example -->
+    <!-- Bootstrap provides utilities for aligning columns within a row. The justify-content-* classes help align content inside the row. 
+       .justify-content-center centers the columns, while other options like j-c-end, j-c-between, etc., allow for more flexibility. -->
+    <div class="container-lg my-5">
+      <h2>justifying columns</h2>
+      <div class="row justify-content-center">
+        <!-- Centers the columns inside the row -->
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- 
+Basic Grid Layout:
+
+The grid system is built using rows and columns. .row creates a horizontal group of columns, and .col defines equal-width columns within that row.
+The grid system is 12 columns wide by default, and any number of .col elements will automatically adjust their width equally to fit.
+Column Widths:
+
+You can specify how many of the 12 columns each element should span using classes like .col-6, .col-3, etc.
+This lets you control the width of each column.
+Responsive Column Widths:
+
+The grid is responsive and adapts to different screen sizes. Classes like .col-sm-4 or .col-lg-6 allow you to specify column sizes for different breakpoints (small, large, etc.).
+These classes ensure that the layout adjusts dynamically based on the device.
+Justifying Columns:
+
+The .justify-content-* classes provide a way to align columns inside a row. For example, .justify-content-center centers the columns, while other options like justify-content-between, justify-content-end, etc., give different alignment options.
+Gutter Spacing:
+
+.gy-{n} classes control vertical gutter (spacing) between rows, where {n} specifies the size of the gutter.
+You can manually control the spacing between columns with these classes.
+-->

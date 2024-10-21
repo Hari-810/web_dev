@@ -1,0 +1,31 @@
+Front-End Framework: Bootstrap is a free, open-source front-end framework used for designing responsive websites and web applications.
+
+CSS and JavaScript-Based: It includes a set of CSS (Cascading Style Sheets) and JavaScript components to create responsive layouts, interactive elements, and user-friendly web pages.
+
+Developed by Twitter: Originally developed by Twitter engineers to ensure consistency across their internal tools, later made public for general web development.
+
+Responsive Design: Bootstrap is designed with a mobile-first approach, allowing web pages to adapt seamlessly across different screen sizes (desktops, tablets, phones).
+
+Grid System: Bootstrap uses a 12-column grid layout system to build flexible and responsive layouts, with rows and columns that adapt to different screen sizes.
+
+Pre-Designed Components: It provides a wide range of pre-styled, reusable components such as:
+
+    Buttons
+    Forms
+    Navbars
+    Alerts
+    Modals
+    Cards
+Cross-Browser Compatibility: Ensures that websites look and function consistently across different browsers (Chrome, Firefox, Safari, Edge, etc.).
+
+Customizable: You can easily customize Bootstrap by modifying its default Sass variables or overriding its styles.
+
+JavaScript Plugins: Comes with built-in JavaScript plugins for additional functionality, such as dropdowns, modals, carousels, and tooltips.
+
+Supports Modern Web Technologies: From Bootstrap 4 onwards, it uses Flexbox for layout and positioning, and Bootstrap 5 has dropped dependency on jQuery for a more modern and lightweight experience.
+
+Large Community and Documentation: It has a huge community and offers comprehensive documentation, making it easy to learn and troubleshoot.
+
+Versatile: Can be used for everything from simple landing pages to complex web applications.
+
+This combination of ease of use, responsiveness, and flexibility makes Bootstrap a popular choice for web developers.

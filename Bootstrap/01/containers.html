@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Containers</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- https://getbootstrap.com/docs/5.0/examples/grid/#containers -->
+
+    <!-- Container example -->
+    <!-- A normal container has a fixed width that adapts based on screen size (sm, md, lg, etc.), 
+         with responsive padding and margins. 
+         It is centered on larger screens and uses margins to maintain consistency. -->
+    <div class="container">
+      <h2>normal container</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    </div>
+
+    <!-- Fluid container example -->
+    <!-- A fluid container (`container-fluid`) is always 100% width, spanning the entire screen regardless of the screen size. -->
+    <div class="container-fluid my-5">
+      <h2>fluid container</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    </div>
+
+    <!-- Responsive container for large screens -->
+    <!-- The `container-lg` will be 100% width for smaller screens (xs to md) and will 
+         adopt the standard container width from large (lg) screen sizes and up. -->
+    <div class="container-lg my-5">
+      <h2>100% until lg screens, then container</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+    </div>
+
+    <!-- Responsive container for extra large screens -->
+    <!-- The `container-xl` will be 100% width for screens up to large (lg), but 
+         will switch to standard container width at extra large (xl) screen sizes and above. -->
+    <div class="container-xl my-5">
+      <h2>100% until xl screens, then container</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+    </div>
+
+    <!-- Bootstrap JS bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- 
+
+container: A standard responsive container with a maximum width that changes based on screen size. It adapts automatically to fit small, medium, large, etc., screens.
+
+Breakpoints: container has different max-widths for each screen size (e.g., 100% width on small screens, a fixed width on larger ones).
+container-fluid: A full-width container that spans the entire viewport regardless of screen size. It's always 100% width, no matter the device.
+
+container-lg: 100% width until the screen size reaches lg (large) screens, after which it behaves like a standard container (fixed width based on screen size).
+
+container-xl: Similar to container-lg, but it behaves like a fluid container until the screen size reaches xl (extra-large), at which point it switches to a fixed width.
+
+my-5: This is shorthand for adding margin on the vertical axis (y) of 5 units, creating spacing above and below the container elements.-->
