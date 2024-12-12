@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Unset Example</title>
+    <style>
+      /* Parent styles */
+      .parent {
+        color: red; /* Inheritable property */
+        margin: 20px; /* Non-inheritable property */
+      }
+
+      /* Reset styles using unset */
+      .unset-color {
+        color: unset; /* Acts like 'inherit' for color */
+      }
+
+      .unset-margin {
+        margin: unset; /* Acts like 'initial' for margin */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h1>Parent Element</h1>
+
+      <p>
+        Child element without any overrides. It inherits
+        <strong>red color</strong> from the parent.
+      </p>
+
+      <p class="unset-color">
+        Child element with <code>color: unset</code>. Resets the color to
+        inherit from the parent (red).
+      </p>
+
+      <p style="color: blue" class="unset-color">
+        Child element with an inline <code>color: blue</code>, but
+        <code>color: unset</code> in CSS. Resets to parent color (red).
+      </p>
+
+      <p style="margin: 50px" class="unset-margin">
+        Child element with an inline <code>margin: 50px</code>, but
+        <code>margin: unset</code> in CSS. Resets to browser default (0px).
+      </p>
+
+      <p style="margin: 50px">
+        Child element without <code>unset</code>. Keeps its inline margin of
+        50px.
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+        |	Effect on Inheritable Properties	|	Effect on Non-Inheritable Properties
+        
+inherit |	Inherits from parent	            |	Inherits from parent
+initial	|	Resets to browser's default value	|	Resets to browser's default value
+unset	|	Acts like inherit	                |	Acts like initial
+-->
