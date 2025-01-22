@@ -88,6 +88,16 @@ while (i < 10) {
   i++;
 }
 
+let array = [1, 2, 3, 4, 5];
+let i = 0;
+
+while (i < array.length) {
+  if (array[i] % 2 === 0) {
+    console.log(array[i]);
+  }
+  i++;
+}
+
 // do...while loop
 /*
 A do...while loop in JavaScript is a control flow statement that is similar to a while loop, but it guarantees that the code inside the loop will be executed at least once. The basic syntax of a do...while loop is as follows
